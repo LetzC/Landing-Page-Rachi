@@ -1,13 +1,16 @@
 import Header from "./components/Header";
-import illustrationMan from "/illustration-man-home-1.svg";
 import Button from "./components/Button";
 import CardSimple from "./components/cardSimple";
 
 const titleStyle = "font-semibold text-zinc-800 leading-tight";
 
+import illustrationMan from "/illustration-man-home-1.svg";
 import person from "/person.svg";
 import security from "/security.svg";
 import happyEmoji from "/happy-emoji.svg";
+import playStoreButton from "/google-play.svg";
+import appStore from "/app-store.svg";
+import illustrationNotification from "/illustration-notifications.svg";
 
 function App() {
   return (
@@ -54,6 +57,38 @@ function App() {
               description={"Lorem ipsum dolor sit amet, consecteteu."}
             />
           </section>
+        </article>
+
+        <article className="px-6 md:px-32 py-16 bg-blue-50 grid lg:grid-cols-2 place-items-center lg:gap-24">
+          <div>
+            <h1 className={`${titleStyle} text-3xl sm:text-4xl mb-6`}>
+              Baixe nosso app para desfrutar mais!
+            </h1>
+
+            <p className="text-zinc-600 max-w-[444px]">
+              Amet in elementum nulla scelerisque dui, egestas at. Elit
+              consectetur turpis elementum amet vitae et etiam nec. Varius
+              volutpat hac adipiscing tincidunt pretium.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mt-8 mb-12">
+              <img
+                src={playStoreButton}
+                alt="Play Store"
+                className="cursor-pointer max-w-[165.45px] max-h-[52.17px]"
+              />
+              <img
+                src={appStore}
+                alt="Play Store"
+                className="cursor-pointer max-w-[165.45px] max-h-[52.17px]"
+              />
+            </div>
+          </div>
+
+          <img
+            src={illustrationNotification}
+            alt="illustration Notifications"
+          />
         </article>
       </main>
     </>
