@@ -6,7 +6,7 @@ export default function CardSimple({ icon, iconAlt, title, description }) {
       <h6 className="font-semibold text-zinc-800 leading-tight text-lg mt-7 mb-4">
         {title}
       </h6>
-      <p>{description}</p>
+      <p className="text-sm sm:text-lg text-zinc-600">{description}</p>
     </section>
   );
 }
