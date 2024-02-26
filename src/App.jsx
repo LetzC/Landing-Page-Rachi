@@ -14,6 +14,8 @@ import playStoreButton from "/google-play.svg";
 import appStore from "/app-store.svg";
 import illustrationNotification from "/illustration-notifications.svg";
 import Card from "./components/Card";
+import bgImage from "/contact-bg.jpg";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -133,7 +135,41 @@ function App() {
             />
           </section>
         </article>
+
+        <section
+          className="flex flex-col place-items-center mt-10 text-center py-8 px-6 md:py-14 bg-cover bg-no-repeat bg-center"
+          style={{
+            backgroundImage: `linear-gradient(0deg, rgba(41, 49, 69, 0.7), rgba(41, 49, 69, 0.7)), url(${bgImage})`,
+          }}
+        >
+          <h2 className="font-semibold text-white leading-tight text-2xl sm:text-4xl mb-4">
+            Contato
+          </h2>
+          <p className="text-sm text-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+
+          <div className="flex flex-col md:flex-row justify-between w-full max-w-[520px] place-items-center gap-10">
+            <input
+              type="email"
+              className="bg-transparent border-b-[1px] placeholder-white text-white focus:outline-none mt-6 mb-9 pb-3 w-[100%]"
+              placeholder="Seu melhor e-mail"
+            />
+
+            <button
+              className="bg-blue-500 hover:bg-blue-600
+            text-base	sm:text-lg text-white hover:text-slate-200 transition-colors
+            py-2 w-full sm:w-auto sm:px-9 rounded-full
+            max-h-14
+    "
+            >
+              Enviar
+            </button>
+          </div>
+        </section>
       </main>
+      <Footer />
     </>
   );
 }
