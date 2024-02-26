@@ -37,7 +37,10 @@ function App() {
           <img src={illustrationMan} alt="illustration man" />
         </article>
 
-        <article className="flex flex-col place-items-center mt-14">
+        <article
+          className="flex flex-col place-items-center mt-14"
+          id="functionality"
+        >
           <h2 className={`${titleStyle} text-2xl sm:text-4xl`}>
             Como funciona
           </h2>
@@ -66,7 +69,7 @@ function App() {
           </section>
         </article>
 
-        <article className={colorfulArticle}>
+        <article className={colorfulArticle} id="app">
           <div>
             <h2 className={`${titleStyle} text-3xl sm:text-4xl mb-6`}>
               Baixe nosso app para desfrutar mais!
@@ -98,7 +101,10 @@ function App() {
           />
         </article>
 
-        <article className="flex flex-col place-items-center mt-12 px-3 sm:px-6">
+        <article
+          className="flex flex-col place-items-center mt-12 px-3 sm:px-6"
+          id="plans"
+        >
           <h2 className={`${titleStyle} text-2xl sm:text-4xl mb-4`}>
             Nossos Planos
           </h2>
@@ -141,6 +147,7 @@ function App() {
           style={{
             backgroundImage: `linear-gradient(0deg, rgba(41, 49, 69, 0.7), rgba(41, 49, 69, 0.7)), url(${bgImage})`,
           }}
+          id="contact"
         >
           <h2 className="font-semibold text-white leading-tight text-2xl sm:text-4xl mb-4">
             Contato

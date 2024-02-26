@@ -16,16 +16,16 @@ export default function MenuBurger() {
             className="absolute right-4 w-7 h-7 top-4 cursor-pointer"
           />
           <nav className="flex flex-col absolute top-14 text-center p-8 gap-8 bg-zinc-800 left-0 w-full ">
-            <a href="#" className={aStyle}>
+            <a href="#functionality" className={aStyle}>
               Funcionalidades
             </a>
-            <a href="#" className={aStyle}>
+            <a href="#app" className={aStyle}>
               App
             </a>
-            <a href="#" className={aStyle}>
+            <a href="#plans" className={aStyle}>
               Planos
             </a>
-            <a href="#" className={aStyle}>
+            <a href="#contact" className={aStyle}>
               Contato
             </a>
           </nav>

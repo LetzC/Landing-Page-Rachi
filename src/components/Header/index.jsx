@@ -17,16 +17,16 @@ export default function Header() {
         <MenuBurger />
       ) : (
         <nav className="flex gap-16">
-          <a href="#" className={aStyle}>
+          <a href="#functionality" className={aStyle}>
             Funcionalidades
           </a>
-          <a href="#" className={aStyle}>
+          <a href="#app" className={aStyle}>
             App
           </a>
-          <a href="#" className={aStyle}>
+          <a href="#plans" className={aStyle}>
             Planos
           </a>
-          <a href="#" className={aStyle}>
+          <a href="#contact" className={aStyle}>
             Contato
           </a>
         </nav>
