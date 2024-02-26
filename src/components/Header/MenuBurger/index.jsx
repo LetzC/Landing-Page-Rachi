@@ -16,16 +16,28 @@ export default function MenuBurger() {
             className="absolute right-4 w-7 h-7 top-4 cursor-pointer"
           />
           <nav className="flex flex-col absolute top-14 text-center p-8 gap-8 bg-zinc-800 left-0 w-full ">
-            <a href="#functionality" className={aStyle}>
+            <a
+              href="#functionality"
+              className={aStyle}
+              onClick={() => setStatus(false)}
+            >
               Funcionalidades
             </a>
-            <a href="#app" className={aStyle}>
+            <a href="#app" className={aStyle} onClick={() => setStatus(false)}>
               App
             </a>
-            <a href="#plans" className={aStyle}>
+            <a
+              href="#plans"
+              className={aStyle}
+              onClick={() => setStatus(false)}
+            >
               Planos
             </a>
-            <a href="#contact" className={aStyle}>
+            <a
+              href="#contact"
+              className={aStyle}
+              onClick={() => setStatus(false)}
+            >
               Contato
             </a>
           </nav>
