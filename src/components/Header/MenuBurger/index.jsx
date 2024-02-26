@@ -1,7 +1,8 @@
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
 
-const aStyle = "text-zinc-800 hover:text-blue-800 transition-colors";
+const aStyle =
+  "relative transition-colors text-white hover:border-b-[1px] border-gray-400 pb-4 w-full";
 
 export default function MenuBurger() {
   const [status, setStatus] = useState(false);
@@ -14,7 +15,7 @@ export default function MenuBurger() {
             onClick={() => setStatus(false)}
             className="absolute right-4 w-7 h-7 top-4 cursor-pointer"
           />
-          <nav className="flex flex-col absolute right-4 top-14 text-center p-5 gap-4 bg-gray-200  rounded">
+          <nav className="flex flex-col absolute top-14 text-center p-8 gap-8 bg-zinc-800 left-0 w-full ">
             <a href="#" className={aStyle}>
               Funcionalidades
             </a>
