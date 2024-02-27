@@ -1,13 +1,6 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
 
-Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  description: PropTypes.string.isRequired,
-  isDark: PropTypes.bool.isRequired,
-};
-
 export default function Card({ title, price, description, isDark }) {
   if (isDark) {
     return (
@@ -43,3 +36,10 @@ export default function Card({ title, price, description, isDark }) {
     );
   }
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+  isDark: PropTypes.bool.isRequired,
+};

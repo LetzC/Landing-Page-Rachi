@@ -12,7 +12,7 @@ export default function CardSimple({ icon, iconAlt, title, description }) {
   );
 }
 
-CardSimple.PropTypes = {
+CardSimple.propTypes = {
   icon: PropTypes.elementType,
   iconAlt: PropTypes.string,
   title: PropTypes.string.isRequired,

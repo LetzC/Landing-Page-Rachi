@@ -1,4 +1,4 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
 export default function Button({ children }) {
   return (
     <button
@@ -13,3 +13,7 @@ export default function Button({ children }) {
     </button>
   );
 }
+
+Button.propTypes = {
+  children: PropTypes.string,
+};
