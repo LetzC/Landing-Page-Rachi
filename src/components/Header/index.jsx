@@ -1,4 +1,4 @@
-import logo from "../../../public/logo.svg";
+import logo from "/logo.svg";
 import { useMediaQuery } from "react-responsive";
 import MenuBurger from "./MenuBurger/index";
 
