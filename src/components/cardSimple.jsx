@@ -1,4 +1,5 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
+
 export default function CardSimple({ icon, iconAlt, title, description }) {
   return (
     <section className="flex flex-col place-items-center max-w-52 text-center">
@@ -10,3 +11,10 @@ export default function CardSimple({ icon, iconAlt, title, description }) {
     </section>
   );
 }
+
+CardSimple.PropTypes = {
+  icon: PropTypes.elementType,
+  iconAlt: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
